@@ -11,9 +11,11 @@ public class SpringSeason {
         boolean isSpring = (month == 3 && day >= 20) || month == 4 || month == 5 || (month == 6 && day <= 20);
 
         // Print result
-        if (isSpring) {
-            System.out.println("Its a Spring");
-        } else
+        if (isSpring)
+		{
+            System.out.println("Spring");
+        } 
+		else
 		{
             System.out.println("Not a Spring");
         }
