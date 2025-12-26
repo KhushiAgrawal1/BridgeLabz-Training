@@ -1,5 +1,5 @@
-📅 Day 1 – Git & GitHub Setup
-🗓 Date: 16 December 2025
+### 📅 Day 1 – Git & GitHub Setup
+-- 🗓 Date: 16 December 2025
 📌 Summary
 Installed and configured Git and created a GitHub repository to organize Core Java practice.
 ✅ Tasks
