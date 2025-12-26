@@ -21,7 +21,7 @@ public class PowerWhile {
             counter++;
         }
 
-        System.out.println("Result = " + result);
+        System.out.println("Result is " + result);
 
         input.close();
     }
