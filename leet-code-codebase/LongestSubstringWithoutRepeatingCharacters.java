@@ -11,7 +11,7 @@ public class  LongestSubstringWithoutRepeatingCharacters {
         for (int right = 0; right < s.length(); right++) {
             char currentChar = s.charAt(right);
 
-            // If currentChar already exists in set, remove characters from left
+            // If currentChar already exists in set, remove the characters from left
             while (set.contains(currentChar)) {
                 set.remove(s.charAt(left));
                 left++;
