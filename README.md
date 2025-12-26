@@ -7,7 +7,7 @@ Installed and configured Git and created a GitHub repository to organize Core Ja
 🌐 GitHub repository setup
 📂 Project folder structuring
 📁 Folder Structure
-BridgeLabs-Training/
+~~~BridgeLabs-Training/
 └── core-java-practice/
     └── gcr-codebase/
         ├── 📦 arrays/
@@ -19,4 +19,4 @@ BridgeLabs-Training/
         ├── ✍️ strings/
         ├── 🧠 leet-code-codebase/
         ├── 📘 scenario-based/
-        └── 📄 README.md
+        └── 📄 README.md~~~
