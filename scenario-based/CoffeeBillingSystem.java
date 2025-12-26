@@ -72,7 +72,7 @@ public class CoffeeBillingSystem {
             System.out.println("Final Bill  : ₹" + finalBill);
         }
 
-        // Close scanner
+        
         input.close();
     }
 }
