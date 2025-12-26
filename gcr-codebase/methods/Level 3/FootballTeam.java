@@ -24,7 +24,11 @@ public class FootballTeam
 	
 	public static double heightMean(int[] heights)
 	{
+<<<<<<< HEAD
 	    int sum = 0;
+=======
+	    int sum = 0; 
+>>>>>>> 8601a3d9e4e146b37aafd82a41b1f9f57e370bac
 		for (int i = 0; i < heights.length; i++)
 		{
 		    sum += heights[i];

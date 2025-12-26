@@ -12,9 +12,10 @@ public class SpringSeason {
 
         // Print result
         if (isSpring) {
-            System.out.println("Its a Spring Season");
-        } else {
-            System.out.println("Not a Spring Season");
+            System.out.println("Its a Spring");
+        } else
+		{
+            System.out.println("Not a Spring");
         }
     }
 }
