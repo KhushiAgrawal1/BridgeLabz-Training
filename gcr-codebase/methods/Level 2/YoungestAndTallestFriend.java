@@ -57,8 +57,8 @@ public class YoungestAndTallestFriend {
         int tallestFriendIndex = findTallestIndex(heights);
 
         // Display results
-        System.out.println("Youngest Friend: " + friends[youngestFriendIndex]);
-        System.out.println("Tallest Friend: " + friends[tallestFriendIndex]);
+        System.out.println("Youngest Friend is " + friends[youngestFriendIndex]);
+        System.out.println("Tallest Friend is " + friends[tallestFriendIndex]);
 
         input.close(); // Close Scanner
     }
