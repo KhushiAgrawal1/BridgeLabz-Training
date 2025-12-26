@@ -24,11 +24,9 @@ public class FootballTeam
 	
 	public static double heightMean(int[] heights)
 	{
-<<<<<<< HEAD
+
 	    int sum = 0;
-=======
-	    int sum = 0; 
->>>>>>> 8601a3d9e4e146b37aafd82a41b1f9f57e370bac
+
 		for (int i = 0; i < heights.length; i++)
 		{
 		    sum += heights[i];
@@ -79,9 +77,9 @@ public class FootballTeam
         double meanHeight = heightMean(playerHeights);
 
         // Display results
-        System.out.println("Shortest Height: " + shortestHeight + " cms");
-        System.out.println("Tallest Height: " + tallestHeight + " cms");
-        System.out.println("Mean Height: " + meanHeight + " cms");
+        System.out.println("Shortest Height is : " + shortestHeight + " cms");
+        System.out.println("Tallest Height is : " + tallestHeight + " cms");
+        System.out.println("Mean Height is : " + meanHeight + " cms");
 		
 	}
 }	
