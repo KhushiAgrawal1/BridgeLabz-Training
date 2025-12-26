@@ -39,7 +39,7 @@ public class TwoSum {
             }
         }
 
-        // Return empty array if no solution is found
+        // Return empty array if solution is not found
         return new int[]{};
     }
 }
