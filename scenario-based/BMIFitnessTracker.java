@@ -37,7 +37,7 @@ public class BMIFitnessTracker {
             System.out.println("BMI Category: Overweight");
         }
 
-        // Close Scanner object
         input.close();
+        
     }
 }
