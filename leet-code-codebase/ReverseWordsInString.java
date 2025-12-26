@@ -1,6 +1,6 @@
 public class  ReverseWordsInString {
     public String reverseWords(String s) {
-        // Trim leading and trailing spaces
+        // Trim leading & trailing spaces
         s = s.trim();
 
         // Split the string by one or more spaces using regex
@@ -18,5 +18,5 @@ public class  ReverseWordsInString {
         }
 
         return reversed.toString();
-    }
+		}
 }
