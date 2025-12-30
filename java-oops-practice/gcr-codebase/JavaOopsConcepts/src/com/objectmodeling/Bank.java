@@ -8,7 +8,6 @@ public class Bank {
     }
 
     void openAccount(Customer customer) {
-		
         System.out.println("Account opened for " + customer.name + " in " + bankName);
     }
 }
