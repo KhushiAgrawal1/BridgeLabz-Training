@@ -18,7 +18,6 @@ public class LibraryBook {
 		System.out.println("Price : " + price);
 	}
 	void checkStatus() {
-		if()
 	}
 
 	public static void main(String[] args) {
