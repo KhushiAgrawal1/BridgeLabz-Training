@@ -9,7 +9,7 @@ public class MovieNode {
     MovieNode next;
     MovieNode prev;
 
-    public MovieNode(String title, String director, int year, double rating) {
+    MovieNode(String title, String director, int year, double rating) {
         this.title = title;
         this.director = director;
         this.year = year;
@@ -18,4 +18,5 @@ public class MovieNode {
         this.prev = null;
     }
 }
+
 

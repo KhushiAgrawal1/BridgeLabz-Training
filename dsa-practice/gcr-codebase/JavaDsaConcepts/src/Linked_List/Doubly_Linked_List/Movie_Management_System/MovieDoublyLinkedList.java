@@ -2,44 +2,48 @@ package Linked_List.Doubly_Linked_List.Movie_Management_System;
 
 public class MovieDoublyLinkedList {
 
-    MovieNode head;
-    MovieNode tail;
+    private MovieNode head;
+    private MovieNode tail;
 
-    // Add at beginning
-    void addAtBeginning(String title, String director, int year, double rating) {
+    public void addAtBeginning(String title, String director, int year, double rating) {
         MovieNode newNode = new MovieNode(title, director, year, rating);
 
         if (head == null) {
             head = tail = newNode;
-        } else {
-            newNode.next = head;
-            head.prev = newNode;
-            head = newNode;
+            return;
         }
+
+        newNode.next = head;
+        head.prev = newNode;
+        head = newNode;
     }
 
-    // Add at end
-    void addAtEnd(String title, String director, int year, double rating) {
+    public void addAtEnd(String title, String director, int year, double rating) {
         MovieNode newNode = new MovieNode(title, director, year, rating);
 
         if (tail == null) {
             head = tail = newNode;
-        } else {
-            tail.next = newNode;
-            newNode.prev = tail;
-            tail = newNode;
+            return;
         }
+
+        tail.next = newNode;
+        newNode.prev = tail;
+        tail = newNode;
     }
 
-    // Add at specific position
-    void addAtPosition(int pos, String title, String director, int year, double rating) {
-        if (pos == 1) {
+    public void addAtPosition(int position, String title, String director, int year, double rating) {
+        if (position <= 0) {
+            System.out.println("Invalid position");
+            return;
+        }
+
+        if (position == 1) {
             addAtBeginning(title, director, year, rating);
             return;
         }
 
         MovieNode temp = head;
-        for (int i = 1; i < pos - 1 && temp != null; i++) {
+        for (int i = 1; i < position - 1 && temp != null; i++) {
             temp = temp.next;
         }
 
@@ -55,32 +59,36 @@ public class MovieDoublyLinkedList {
         temp.next = newNode;
     }
 
-    // Remove by movie title
-    void removeByTitle(String title) {
+    public void removeByTitle(String title) {
+        if (head == null) {
+            System.out.println("List is empty");
+            return;
+        }
+
         MovieNode temp = head;
 
-        while (temp != null) {
-            if (temp.title.equalsIgnoreCase(title)) {
-
-                if (temp == head) {
-                    head = head.next;
-                    if (head != null) head.prev = null;
-                } else if (temp == tail) {
-                    tail = tail.prev;
-                    if (tail != null) tail.next = null;
-                } else {
-                    temp.prev.next = temp.next;
-                    temp.next.prev = temp.prev;
-                }
-                return;
-            }
+        while (temp != null && !temp.title.equalsIgnoreCase(title)) {
             temp = temp.next;
         }
-        System.out.println("Movie not found");
+
+        if (temp == null) {
+            System.out.println("Movie not found");
+            return;
+        }
+
+        if (temp == head) {
+            head = head.next;
+            if (head != null) head.prev = null;
+        } else if (temp == tail) {
+            tail = tail.prev;
+            if (tail != null) tail.next = null;
+        } else {
+            temp.prev.next = temp.next;
+            temp.next.prev = temp.prev;
+        }
     }
 
-    // Search by director
-    void searchByDirector(String director) {
+    public void searchByDirector(String director) {
         MovieNode temp = head;
         boolean found = false;
 
@@ -97,8 +105,7 @@ public class MovieDoublyLinkedList {
         }
     }
 
-    // Search by rating
-    void searchByRating(double rating) {
+    public void searchByRating(double rating) {
         MovieNode temp = head;
         boolean found = false;
 
@@ -115,68 +122,55 @@ public class MovieDoublyLinkedList {
         }
     }
 
-    // Update rating by title
-    void updateRating(String title, double newRating) {
+    public void updateRating(String title, double newRating) {
         MovieNode temp = head;
 
         while (temp != null) {
             if (temp.title.equalsIgnoreCase(title)) {
                 temp.rating = newRating;
+                System.out.println("Rating updated");
                 return;
             }
             temp = temp.next;
         }
+
         System.out.println("Movie not found");
     }
 
-    // Display forward
-    void displayForward() {
+    public void displayForward() {
         MovieNode temp = head;
+
+        if (temp == null) {
+            System.out.println("No movies available");
+            return;
+        }
+
         while (temp != null) {
             displayMovie(temp);
             temp = temp.next;
         }
     }
 
-    // Display reverse
-    void displayReverse() {
+    public void displayReverse() {
         MovieNode temp = tail;
+
+        if (temp == null) {
+            System.out.println("No movies available");
+            return;
+        }
+
         while (temp != null) {
             displayMovie(temp);
             temp = temp.prev;
         }
     }
 
-    void displayMovie(MovieNode m) {
+    private void displayMovie(MovieNode m) {
         System.out.println(
-                "Title: " + m.title +
-                ", Director: " + m.director +
-                ", Year: " + m.year +
-                ", Rating: " + m.rating
+                m.title + " | " +
+                m.director + " | " +
+                m.year + " | " +
+                m.rating
         );
-    }
-
-    // Main method
-    public static void main(String[] args) {
-        MovieDoublyLinkedList list = new MovieDoublyLinkedList();
-
-        list.addAtBeginning("Inception", "Nolan", 2010, 8.8);
-        list.addAtEnd("Interstellar", "Nolan", 2014, 8.6);
-        list.addAtPosition(2, "Titanic", "Cameron", 1997, 7.9);
-
-        System.out.println("Forward Display:");
-        list.displayForward();
-
-        System.out.println("\nReverse Display:");
-        list.displayReverse();
-
-        System.out.println("\nSearch by Director:");
-        list.searchByDirector("Nolan");
-
-        list.updateRating("Titanic", 8.1);
-        list.removeByTitle("Interstellar");
-
-        System.out.println("\nAfter Update & Deletion:");
-        list.displayForward();
     }
 }
