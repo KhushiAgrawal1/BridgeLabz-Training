@@ -2,15 +2,16 @@ package Linked_List.Circular_Linked_List.Task_Scheduler;
 
 public class TaskCircularLinkedList {
 
-    TaskNode head;
+    private TaskNode head;
+    private TaskNode current;
 
-    // Add at beginning
-    void addAtBeginning(int id, String name, int priority, String dueDate) {
-        TaskNode newNode = new TaskNode(id, name, priority, dueDate);
+    public void addAtBeginning(int taskId, String taskName, int priority, String dueDate) {
+        TaskNode newNode = new TaskNode(taskId, taskName, priority, dueDate);
 
         if (head == null) {
             head = newNode;
             newNode.next = head;
+            current = head;
             return;
         }
 
@@ -24,13 +25,13 @@ public class TaskCircularLinkedList {
         head = newNode;
     }
 
-    // Add at end
-    void addAtEnd(int id, String name, int priority, String dueDate) {
-        TaskNode newNode = new TaskNode(id, name, priority, dueDate);
+    public void addAtEnd(int taskId, String taskName, int priority, String dueDate) {
+        TaskNode newNode = new TaskNode(taskId, taskName, priority, dueDate);
 
         if (head == null) {
             head = newNode;
             newNode.next = head;
+            current = head;
             return;
         }
 
@@ -43,52 +44,63 @@ public class TaskCircularLinkedList {
         newNode.next = head;
     }
 
-    // Add at specific position
-    void addAtPosition(int pos, int id, String name, int priority, String dueDate) {
-        if (pos == 1) {
-            addAtBeginning(id, name, priority, dueDate);
+    public void addAtPosition(int position, int taskId, String taskName, int priority, String dueDate) {
+        if (position <= 0) {
+            System.out.println("Invalid position");
             return;
         }
 
+        if (position == 1) {
+            addAtBeginning(taskId, taskName, priority, dueDate);
+            return;
+        }
+
+        TaskNode newNode = new TaskNode(taskId, taskName, priority, dueDate);
         TaskNode temp = head;
-        for (int i = 1; i < pos - 1 && temp.next != head; i++) {
+
+        for (int i = 1; i < position - 1 && temp.next != head; i++) {
             temp = temp.next;
         }
 
-        TaskNode newNode = new TaskNode(id, name, priority, dueDate);
         newNode.next = temp.next;
         temp.next = newNode;
     }
 
-    // Remove by task ID
-    void removeByTaskId(int id) {
-        if (head == null) return;
+    public void removeByTaskId(int taskId) {
+        if (head == null) {
+            System.out.println("Task list is empty");
+            return;
+        }
 
         TaskNode curr = head;
         TaskNode prev = null;
 
         do {
-            if (curr.taskId == id) {
-
-                // Only one node
-                if (curr == head && curr.next == head) {
-                    head = null;
-                }
-                // Deleting head
-                else if (curr == head) {
+            if (curr.taskId == taskId) {
+                if (prev == null) {
                     TaskNode temp = head;
                     while (temp.next != head) {
                         temp = temp.next;
                     }
+
+                    if (head == head.next) {
+                        head = null;
+                        current = null;
+                        return;
+                    }
+
+                    temp.next = head.next;
                     head = head.next;
-                    temp.next = head;
-                }
-                // Deleting middle or last
-                else {
+                } else {
                     prev.next = curr.next;
+                }
+
+                if (current == curr) {
+                    current = curr.next;
                 }
                 return;
             }
+
             prev = curr;
             curr = curr.next;
         } while (curr != head);
@@ -96,25 +108,24 @@ public class TaskCircularLinkedList {
         System.out.println("Task not found");
     }
 
-    // View current task and move to next
-    void viewAndMoveNext() {
-        if (head == null) {
+    public void viewCurrentAndMoveNext() {
+        if (current == null) {
             System.out.println("No tasks available");
             return;
         }
 
         System.out.println(
-                "Current Task -> ID: " + head.taskId +
-                ", Name: " + head.taskName +
-                ", Priority: " + head.priority +
-                ", Due Date: " + head.dueDate
+                "Current Task: " +
+                current.taskId + " " +
+                current.taskName + " " +
+                current.priority + " " +
+                current.dueDate
         );
 
-        head = head.next;
+        current = current.next;
     }
 
-    // Display all tasks
-    void displayAll() {
+    public void displayAll() {
         if (head == null) {
             System.out.println("No tasks to display");
             return;
@@ -122,61 +133,40 @@ public class TaskCircularLinkedList {
 
         TaskNode temp = head;
         do {
-            displayTask(temp);
+            System.out.println(
+                    temp.taskId + " " +
+                    temp.taskName + " " +
+                    temp.priority + " " +
+                    temp.dueDate
+            );
             temp = temp.next;
         } while (temp != head);
     }
 
-    // Search by priority
-    void searchByPriority(int priority) {
-        if (head == null) return;
+    public void searchByPriority(int priority) {
+        if (head == null) {
+            System.out.println("No tasks available");
+            return;
+        }
 
         TaskNode temp = head;
         boolean found = false;
 
         do {
             if (temp.priority == priority) {
-                displayTask(temp);
+                System.out.println(
+                        temp.taskId + " " +
+                        temp.taskName + " " +
+                        temp.priority + " " +
+                        temp.dueDate
+                );
                 found = true;
             }
             temp = temp.next;
         } while (temp != head);
 
         if (!found) {
-            System.out.println("No task found with this priority");
+            System.out.println("No tasks found with this priority");
         }
-    }
-
-    void displayTask(TaskNode t) {
-        System.out.println(
-                "Task ID: " + t.taskId +
-                ", Name: " + t.taskName +
-                ", Priority: " + t.priority +
-                ", Due Date: " + t.dueDate
-        );
-    }
-
-    // Main method
-    public static void main(String[] args) {
-        TaskCircularLinkedList scheduler = new TaskCircularLinkedList();
-
-        scheduler.addAtEnd(1, "Design Module", 1, "10-02-2026");
-        scheduler.addAtEnd(2, "Code Review", 2, "12-02-2026");
-        scheduler.addAtBeginning(3, "Testing", 1, "08-02-2026");
-
-        System.out.println("All Tasks:");
-        scheduler.displayAll();
-
-        System.out.println("\nView & Move Next:");
-        scheduler.viewAndMoveNext();
-        scheduler.viewAndMoveNext();
-
-        System.out.println("\nSearch by Priority:");
-        scheduler.searchByPriority(1);
-
-        scheduler.removeByTaskId(2);
-
-        System.out.println("\nAfter Deletion:");
-        scheduler.displayAll();
     }
 }
