@@ -2,55 +2,44 @@ package Linked_List.Singly_Linked_List.Inventory_Management_System;
 
 public class InventoryLinkedList {
 
-    ItemNode head;
+    private ItemNode head;
 
-    // Add at beginning
-    void addAtBeginning(int id, String name, int qty, double price) {
-        ItemNode newNode = new ItemNode(id, name, qty, price);
-        newNode.next = head;
-        head = newNode;
+    public void addAtBeginning(int id, String name, int qty, double price) {
+        ItemNode node = new ItemNode(id, name, qty, price);
+        node.next = head;
+        head = node;
     }
 
-    // Add at end
-    void addAtEnd(int id, String name, int qty, double price) {
-        ItemNode newNode = new ItemNode(id, name, qty, price);
-
+    public void addAtEnd(int id, String name, int qty, double price) {
+        ItemNode node = new ItemNode(id, name, qty, price);
         if (head == null) {
-            head = newNode;
+            head = node;
             return;
         }
-
         ItemNode temp = head;
-        while (temp.next != null) {
+        while (temp.next != null)
             temp = temp.next;
-        }
-        temp.next = newNode;
+        temp.next = node;
     }
 
-    // Add at specific position
-    void addAtPosition(int pos, int id, String name, int qty, double price) {
-        if (pos == 1) {
+    public void addAtPosition(int pos, int id, String name, int qty, double price) {
+        if (pos <= 1) {
             addAtBeginning(id, name, qty, price);
             return;
         }
 
         ItemNode temp = head;
-        for (int i = 1; i < pos - 1 && temp != null; i++) {
+        for (int i = 1; i < pos - 1 && temp != null; i++)
             temp = temp.next;
-        }
 
-        if (temp == null) {
-            System.out.println("Invalid position");
-            return;
-        }
+        if (temp == null) return;
 
-        ItemNode newNode = new ItemNode(id, name, qty, price);
-        newNode.next = temp.next;
-        temp.next = newNode;
+        ItemNode node = new ItemNode(id, name, qty, price);
+        node.next = temp.next;
+        temp.next = node;
     }
 
-    // Remove by Item ID
-    void removeByItemId(int id) {
+    public void removeById(int id) {
         if (head == null) return;
 
         if (head.itemId == id) {
@@ -59,19 +48,14 @@ public class InventoryLinkedList {
         }
 
         ItemNode temp = head;
-        while (temp.next != null && temp.next.itemId != id) {
+        while (temp.next != null && temp.next.itemId != id)
             temp = temp.next;
-        }
 
-        if (temp.next != null) {
+        if (temp.next != null)
             temp.next = temp.next.next;
-        } else {
-            System.out.println("Item not found");
-        }
     }
 
-    // Update quantity
-    void updateQuantity(int id, int newQty) {
+    public void updateQuantity(int id, int newQty) {
         ItemNode temp = head;
         while (temp != null) {
             if (temp.itemId == id) {
@@ -80,15 +64,13 @@ public class InventoryLinkedList {
             }
             temp = temp.next;
         }
-        System.out.println("Item not found");
     }
 
-    // Search by Item ID
-    void searchById(int id) {
+    public void searchById(int id) {
         ItemNode temp = head;
         while (temp != null) {
             if (temp.itemId == id) {
-                displayItem(temp);
+                printItem(temp);
                 return;
             }
             temp = temp.next;
@@ -96,26 +78,23 @@ public class InventoryLinkedList {
         System.out.println("Item not found");
     }
 
-    // Search by Item Name
-    void searchByName(String name) {
+    public void searchByName(String name) {
         ItemNode temp = head;
         boolean found = false;
 
         while (temp != null) {
             if (temp.itemName.equalsIgnoreCase(name)) {
-                displayItem(temp);
+                printItem(temp);
                 found = true;
             }
             temp = temp.next;
         }
 
-        if (!found) {
+        if (!found)
             System.out.println("Item not found");
-        }
     }
 
-    // Calculate total inventory value
-    void calculateTotalValue() {
+    public void totalInventoryValue() {
         double total = 0;
         ItemNode temp = head;
 
@@ -124,35 +103,32 @@ public class InventoryLinkedList {
             temp = temp.next;
         }
 
-        System.out.println("Total Inventory Value: ₹" + total);
+        System.out.println("Total Inventory Value: " + total);
     }
 
-    // Sort by Item Name (ascending / descending)
-    void sortByName(boolean ascending) {
+    public void sortByName(boolean ascending) {
         for (ItemNode i = head; i != null; i = i.next) {
             for (ItemNode j = i.next; j != null; j = j.next) {
                 if ((ascending && i.itemName.compareToIgnoreCase(j.itemName) > 0) ||
                     (!ascending && i.itemName.compareToIgnoreCase(j.itemName) < 0)) {
-                    swapData(i, j);
+                    swap(i, j);
                 }
             }
         }
     }
 
-    // Sort by Price (ascending / descending)
-    void sortByPrice(boolean ascending) {
+    public void sortByPrice(boolean ascending) {
         for (ItemNode i = head; i != null; i = i.next) {
             for (ItemNode j = i.next; j != null; j = j.next) {
                 if ((ascending && i.price > j.price) ||
                     (!ascending && i.price < j.price)) {
-                    swapData(i, j);
+                    swap(i, j);
                 }
             }
         }
     }
 
-    // Swap item data
-    void swapData(ItemNode a, ItemNode b) {
+    private void swap(ItemNode a, ItemNode b) {
         int id = a.itemId;
         String name = a.itemName;
         int qty = a.quantity;
@@ -169,47 +145,20 @@ public class InventoryLinkedList {
         b.price = price;
     }
 
-    // Display all items
-    void displayAll() {
+    public void display() {
         ItemNode temp = head;
         while (temp != null) {
-            displayItem(temp);
+            printItem(temp);
             temp = temp.next;
         }
     }
 
-    void displayItem(ItemNode i) {
+    private void printItem(ItemNode i) {
         System.out.println(
-                "ID: " + i.itemId +
-                ", Name: " + i.itemName +
-                ", Quantity: " + i.quantity +
-                ", Price: ₹" + i.price
+                i.itemId + " " +
+                i.itemName + " " +
+                i.quantity + " " +
+                i.price
         );
     }
-
-    // Main method
-    public static void main(String[] args) {
-        InventoryLinkedList inventory = new InventoryLinkedList();
-
-        inventory.addAtEnd(101, "Laptop", 5, 55000);
-        inventory.addAtEnd(102, "Mouse", 20, 500);
-        inventory.addAtBeginning(103, "Keyboard", 10, 1500);
-
-        System.out.println("Inventory List:");
-        inventory.displayAll();
-
-        inventory.updateQuantity(102, 25);
-        inventory.searchByName("Laptop");
-
-        inventory.calculateTotalValue();
-
-        System.out.println("\nSorted by Name (Ascending):");
-        inventory.sortByName(true);
-        inventory.displayAll();
-
-        System.out.println("\nSorted by Price (Descending):");
-        inventory.sortByPrice(false);
-        inventory.displayAll();
-    }
 }
-
