@@ -4,10 +4,10 @@ public class StudentNode {
     int rollNo;
     String name;
     int age;
-    char grade;
+    String grade;
     StudentNode next;
 
-    public StudentNode(int rollNo, String name, int age, char grade) {
+    StudentNode(int rollNo, String name, int age, String grade) {
         this.rollNo = rollNo;
         this.name = name;
         this.age = age;
@@ -15,4 +15,3 @@ public class StudentNode {
         this.next = null;
     }
 }
-
