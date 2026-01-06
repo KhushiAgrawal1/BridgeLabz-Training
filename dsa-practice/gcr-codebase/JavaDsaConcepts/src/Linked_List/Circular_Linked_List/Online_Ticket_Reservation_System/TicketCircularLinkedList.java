@@ -2,65 +2,87 @@ package Linked_List.Circular_Linked_List.Online_Ticket_Reservation_System;
 
 public class TicketCircularLinkedList {
 
-    TicketNode head;
+    private TicketNode head = null;
+    private TicketNode tail = null;
 
     // Add ticket at end
-    void addTicket(int id, String customer, String movie, String seat, String time) {
+    public void addTicket(int id, String customer, String movie,
+                          String seat, String time) {
+
         TicketNode newNode = new TicketNode(id, customer, movie, seat, time);
 
         if (head == null) {
-            head = newNode;
-            newNode.next = head;
+            head = tail = newNode;
+            tail.next = head;
             return;
         }
 
-        TicketNode temp = head;
-        while (temp.next != head) {
-            temp = temp.next;
-        }
-
-        temp.next = newNode;
-        newNode.next = head;
+        tail.next = newNode;
+        tail = newNode;
+        tail.next = head;
     }
 
-    // Remove ticket by ID
-    void removeTicket(int id) {
-        if (head == null) return;
+    // Remove ticket by Ticket ID
+    public void removeTicket(int ticketId) {
+        if (head == null) {
+            System.out.println("No tickets booked");
+            return;
+        }
 
-        TicketNode curr = head;
-        TicketNode prev = null;
+        TicketNode current = head;
+        TicketNode prev = tail;
 
         do {
-            if (curr.ticketId == id) {
+            if (current.ticketId == ticketId) {
 
-                // Only one node
-                if (curr == head && curr.next == head) {
-                    head = null;
-                }
-                // Removing head
-                else if (curr == head) {
-                    TicketNode temp = head;
-                    while (temp.next != head) {
-                        temp = temp.next;
-                    }
+                if (current == head) {
                     head = head.next;
-                    temp.next = head;
+                    tail.next = head;
+                } else if (current == tail) {
+                    tail = prev;
+                    tail.next = head;
+                } else {
+                    prev.next = current.next;
                 }
-                // Removing middle/last
-                else {
-                    prev.next = curr.next;
-                }
+
+                System.out.println("Ticket removed successfully");
                 return;
             }
-            prev = curr;
-            curr = curr.next;
-        } while (curr != head);
+
+            prev = current;
+            current = current.next;
+        } while (current != head);
 
         System.out.println("Ticket not found");
     }
 
+    // Search by Customer or Movie
+    public void searchTicket(String keyword) {
+        if (head == null) {
+            System.out.println("No tickets available");
+            return;
+        }
+
+        TicketNode temp = head;
+        boolean found = false;
+
+        do {
+            if (temp.customerName.equalsIgnoreCase(keyword)
+                    || temp.movieName.equalsIgnoreCase(keyword)) {
+
+                displayTicket(temp);
+                found = true;
+            }
+            temp = temp.next;
+        } while (temp != head);
+
+        if (!found) {
+            System.out.println("No matching ticket found");
+        }
+    }
+
     // Display all tickets
-    void displayTickets() {
+    public void displayTickets() {
         if (head == null) {
             System.out.println("No tickets booked");
             return;
@@ -73,46 +95,8 @@ public class TicketCircularLinkedList {
         } while (temp != head);
     }
 
-    // Search by customer name
-    void searchByCustomer(String customer) {
-        if (head == null) return;
-
-        TicketNode temp = head;
-        boolean found = false;
-
-        do {
-            if (temp.customerName.equalsIgnoreCase(customer)) {
-                displayTicket(temp);
-                found = true;
-            }
-            temp = temp.next;
-        } while (temp != head);
-
-        if (!found)
-            System.out.println("No ticket found for this customer");
-    }
-
-    // Search by movie name
-    void searchByMovie(String movie) {
-        if (head == null) return;
-
-        TicketNode temp = head;
-        boolean found = false;
-
-        do {
-            if (temp.movieName.equalsIgnoreCase(movie)) {
-                displayTicket(temp);
-                found = true;
-            }
-            temp = temp.next;
-        } while (temp != head);
-
-        if (!found)
-            System.out.println("No ticket found for this movie");
-    }
-
     // Count total tickets
-    int countTickets() {
+    public int countTickets() {
         if (head == null) return 0;
 
         int count = 0;
@@ -125,7 +109,7 @@ public class TicketCircularLinkedList {
         return count;
     }
 
-    void displayTicket(TicketNode t) {
+    private void displayTicket(TicketNode t) {
         System.out.println(
                 "Ticket ID: " + t.ticketId +
                 ", Customer: " + t.customerName +
@@ -134,27 +118,4 @@ public class TicketCircularLinkedList {
                 ", Time: " + t.bookingTime
         );
     }
-
-    // Main method
-    public static void main(String[] args) {
-        TicketCircularLinkedList system = new TicketCircularLinkedList();
-
-        system.addTicket(1, "Aman", "Inception", "A10", "10:30 AM");
-        system.addTicket(2, "Riya", "Avatar", "B12", "01:00 PM");
-        system.addTicket(3, "Karan", "Inception", "A11", "10:30 AM");
-
-        System.out.println("All Booked Tickets:");
-        system.displayTickets();
-
-        System.out.println("\nSearch by Movie:");
-        system.searchByMovie("Inception");
-
-        system.removeTicket(2);
-
-        System.out.println("\nAfter Cancellation:");
-        system.displayTickets();
-
-        System.out.println("\nTotal Tickets Booked: " + system.countTickets());
-    }
 }
-

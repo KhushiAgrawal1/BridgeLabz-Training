@@ -6,11 +6,10 @@ public class TicketNode {
     String movieName;
     String seatNumber;
     String bookingTime;
-
     TicketNode next;
 
-    public TicketNode(int ticketId, String customerName, String movieName,
-                      String seatNumber, String bookingTime) {
+    TicketNode(int ticketId, String customerName, String movieName,
+               String seatNumber, String bookingTime) {
         this.ticketId = ticketId;
         this.customerName = customerName;
         this.movieName = movieName;
