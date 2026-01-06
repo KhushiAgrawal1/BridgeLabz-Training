@@ -2,17 +2,15 @@ package Linked_List.Singly_Linked_List.Social_Media_Friend_Connections;
 
 public class SocialMediaLinkedList {
 
-    UserNode head;
+    private UserNode head;
 
-    // Add new user
-    void addUser(int id, String name, int age) {
-        UserNode newUser = new UserNode(id, name, age);
-        newUser.next = head;
-        head = newUser;
+    public void addUser(int id, String name, int age) {
+        UserNode user = new UserNode(id, name, age);
+        user.next = head;
+        head = user;
     }
 
-    // Find user by ID
-    UserNode findUserById(int id) {
+    private UserNode findUserById(int id) {
         UserNode temp = head;
         while (temp != null) {
             if (temp.userId == id)
@@ -22,14 +20,21 @@ public class SocialMediaLinkedList {
         return null;
     }
 
-    // Search user by name
-    void searchByName(String name) {
+    public void searchUserById(int id) {
+        UserNode user = findUserById(id);
+        if (user != null)
+            printUser(user);
+        else
+            System.out.println("User not found");
+    }
+
+    public void searchUserByName(String name) {
         UserNode temp = head;
         boolean found = false;
 
         while (temp != null) {
             if (temp.name.equalsIgnoreCase(name)) {
-                displayUser(temp);
+                printUser(temp);
                 found = true;
             }
             temp = temp.next;
@@ -39,63 +44,61 @@ public class SocialMediaLinkedList {
             System.out.println("User not found");
     }
 
-    // Add friend connection
-    void addFriend(int userId, int friendId) {
-        UserNode user = findUserById(userId);
-        UserNode friend = findUserById(friendId);
+    public void addFriendConnection(int id1, int id2) {
+        UserNode u1 = findUserById(id1);
+        UserNode u2 = findUserById(id2);
 
-        if (user == null || friend == null) {
+        if (u1 == null || u2 == null) {
             System.out.println("User not found");
             return;
         }
 
-        user.friends = addFriendToList(user.friends, friendId);
-        friend.friends = addFriendToList(friend.friends, userId);
+        addFriend(u1, id2);
+        addFriend(u2, id1);
     }
 
-    // Helper to add friend ID
-    FriendNode addFriendToList(FriendNode head, int id) {
-        FriendNode newNode = new FriendNode(id);
-        newNode.next = head;
-        return newNode;
+    private void addFriend(UserNode user, int friendId) {
+        FriendNode f = new FriendNode(friendId);
+        f.next = user.friends;
+        user.friends = f;
     }
 
-    // Remove friend connection
-    void removeFriend(int userId, int friendId) {
-        UserNode user = findUserById(userId);
-        UserNode friend = findUserById(friendId);
+    public void removeFriendConnection(int id1, int id2) {
+        UserNode u1 = findUserById(id1);
+        UserNode u2 = findUserById(id2);
 
-        if (user == null || friend == null)
+        if (u1 == null || u2 == null)
             return;
 
-        user.friends = removeFromFriendList(user.friends, friendId);
-        friend.friends = removeFromFriendList(friend.friends, userId);
+        removeFriend(u1, id2);
+        removeFriend(u2, id1);
     }
 
-    // Helper to remove friend
-    FriendNode removeFromFriendList(FriendNode head, int id) {
-        if (head == null) return null;
+    private void removeFriend(UserNode user, int friendId) {
+        FriendNode temp = user.friends;
+        FriendNode prev = null;
 
-        if (head.friendId == id)
-            return head.next;
-
-        FriendNode temp = head;
-        while (temp.next != null && temp.next.friendId != id) {
+        while (temp != null) {
+            if (temp.friendId == friendId) {
+                if (prev == null)
+                    user.friends = temp.next;
+                else
+                    prev.next = temp.next;
+                return;
+            }
+            prev = temp;
             temp = temp.next;
         }
-
-        if (temp.next != null)
-            temp.next = temp.next.next;
-
-        return head;
     }
 
-    // Display friends of a user
-    void displayFriends(int userId) {
+    public void displayFriends(int userId) {
         UserNode user = findUserById(userId);
-        if (user == null) return;
+        if (user == null) {
+            System.out.println("User not found");
+            return;
+        }
 
-        System.out.println("Friends of " + user.name + ":");
+        System.out.print("Friends of " + user.name + ": ");
         FriendNode temp = user.friends;
 
         if (temp == null) {
@@ -104,80 +107,62 @@ public class SocialMediaLinkedList {
         }
 
         while (temp != null) {
-            System.out.println("Friend ID: " + temp.friendId);
+            System.out.print(temp.friendId + " ");
             temp = temp.next;
         }
+        System.out.println();
     }
 
-    // Find mutual friends
-    void findMutualFriends(int id1, int id2) {
+    public void countFriends(int userId) {
+        UserNode user = findUserById(userId);
+        if (user == null) return;
+
+        int count = 0;
+        FriendNode temp = user.friends;
+        while (temp != null) {
+            count++;
+            temp = temp.next;
+        }
+
+        System.out.println(user.name + " has " + count + " friends");
+    }
+
+    public void mutualFriends(int id1, int id2) {
         UserNode u1 = findUserById(id1);
         UserNode u2 = findUserById(id2);
 
-        if (u1 == null || u2 == null) return;
+        if (u1 == null || u2 == null) {
+            System.out.println("User not found");
+            return;
+        }
 
-        System.out.println("Mutual Friends:");
+        System.out.print("Mutual Friends: ");
         FriendNode f1 = u1.friends;
+        boolean found = false;
 
         while (f1 != null) {
             FriendNode f2 = u2.friends;
             while (f2 != null) {
-                if (f1.friendId == f2.friendId)
-                    System.out.println("Friend ID: " + f1.friendId);
+                if (f1.friendId == f2.friendId) {
+                    System.out.print(f1.friendId + " ");
+                    found = true;
+                }
                 f2 = f2.next;
             }
             f1 = f1.next;
         }
+
+        if (!found)
+            System.out.print("None");
+
+        System.out.println();
     }
 
-    // Count friends for each user
-    void countFriends() {
-        UserNode temp = head;
-        while (temp != null) {
-            int count = 0;
-            FriendNode f = temp.friends;
-            while (f != null) {
-                count++;
-                f = f.next;
-            }
-            System.out.println(temp.name + " has " + count + " friends");
-            temp = temp.next;
-        }
-    }
-
-    void displayUser(UserNode u) {
+    private void printUser(UserNode u) {
         System.out.println(
-                "ID: " + u.userId +
-                ", Name: " + u.name +
-                ", Age: " + u.age
+                u.userId + " " +
+                u.name + " " +
+                u.age
         );
-    }
-
-    // Main method
-    public static void main(String[] args) {
-        SocialMediaLinkedList sm = new SocialMediaLinkedList();
-
-        sm.addUser(1, "Aman", 21);
-        sm.addUser(2, "Riya", 22);
-        sm.addUser(3, "Karan", 23);
-
-        sm.addFriend(1, 2);
-        sm.addFriend(1, 3);
-        sm.addFriend(2, 3);
-
-        sm.displayFriends(1);
-
-        System.out.println("\nMutual Friends between 1 & 2:");
-        sm.findMutualFriends(1, 2);
-
-        System.out.println("\nFriend Count:");
-        sm.countFriends();
-
-        sm.searchByName("Riya");
-
-        sm.removeFriend(1, 2);
-
-        System.out.println("\nAfter Removing Friend:");
-        sm.displayFriends(1);
     }
 }

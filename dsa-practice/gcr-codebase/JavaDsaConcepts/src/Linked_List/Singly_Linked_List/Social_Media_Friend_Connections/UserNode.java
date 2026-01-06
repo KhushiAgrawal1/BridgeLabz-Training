@@ -6,9 +6,9 @@ public class UserNode {
     int age;
 
     FriendNode friends;   // head of friend list
-    UserNode next;        // next user
+    UserNode next;
 
-    public UserNode(int userId, String name, int age) {
+    UserNode(int userId, String name, int age) {
         this.userId = userId;
         this.name = name;
         this.age = age;
@@ -16,3 +16,4 @@ public class UserNode {
         this.next = null;
     }
 }
+
