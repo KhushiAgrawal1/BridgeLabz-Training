@@ -351,5 +351,23 @@ BridgeLabz-Training
 └── README.md
 ```
 
+# Week 3: Data Structures
+## 📅 Day 1 – Linked List
+
+-- 🗓 Date: 2 January 2026
+- 📌 Summary
+
+- Introduction of Data Structure 
+- Key Features of Data Structures in Java
+- Types of Data Structures in Java
+- Single Linked List
+- Double Linked List
+- Circular  Linked List
+  
+🔗 *Code Link:*  
+👉 [Day 14 – Encapsulation, Polymorphism, Interface and Abstract Class](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/JavaDsaConcepts/src/Linked_List)
+
+---
+
 
 
