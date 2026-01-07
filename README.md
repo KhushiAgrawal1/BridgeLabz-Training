@@ -352,7 +352,7 @@ BridgeLabz-Training
 ```
 
 # Week 3: Data Structures
-## 📅 Day 1 – Linked List
+## 📅 Day 15 – Linked List
 
 -- 🗓 Date: 2 January 2026
 - 📌 Summary
@@ -365,7 +365,7 @@ BridgeLabz-Training
 - Circular  Linked List
   
 🔗 *Code Link:*  
-👉 [Day 14 – Encapsulation, Polymorphism, Interface and Abstract Class](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/JavaDsaConcepts/src/Linked_List)
+👉 [Day 14 – Linked List](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/JavaDsaConcepts/src/Linked_List)
 
 ---
 
