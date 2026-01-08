@@ -351,7 +351,7 @@ BridgeLabz-Training
 └── README.md
 ```
 
-# Week 3: Data Structures and Algoritms
+# Week 3: Data Structures and Algorithms
 
 ## 📅 Day 15 – Linked List  
 **(Date: 02-Jan-2025)**
