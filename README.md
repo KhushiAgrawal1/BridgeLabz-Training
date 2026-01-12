@@ -379,7 +379,7 @@ BridgeLabz-Training
 └── README.md
 ```
 
-    🔗 *Code Link:*  
+🔗 *Code Link:*  
 👉 [Day 15 – Linked List Programs](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/JavaDsaConcepts/src/Linked_List)
 
 
@@ -403,8 +403,9 @@ BridgeLabz-Training
   - Converts keys into index values
   - Helps in fast data access
 
-    🔗 *Code Links:*  
+🔗 *Code Links:*  
 👉 [Day 16 – Stack & Queue](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/JavaDsaConcepts/src/Stack_Queue)  
+
 👉 [Day 16 – HashMap & Hash Function](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/JavaDsaConcepts/src/Hash_Map_Hash_Function)
 
 
@@ -421,7 +422,7 @@ BridgeLabz-Training
   - Quick sort
 - Compared elements and swapped them to achieve correct order
 
-  🔗 *Code Link:*  
+🔗 *Code Link:*  
 👉 [Day 17 – Sorting algorithms](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/JavaDsaConcepts/src/Sorting_Algorithms)
 
 
@@ -436,7 +437,7 @@ BridgeLabz-Training
   - Linear Search 
   - Binary Search
 
-  🔗 *Code Link:*
+🔗 *Code Link:*
   
 👉 [Day 18 – StringBuilder](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/JavaDsaConcepts/src/StringBuilder)
 
@@ -461,7 +462,7 @@ BridgeLabz-Training
   - Use efficient algorithms and data structures
   - Minimize extra memory usage where possible
   
-  🔗 *Code Link:*  
+🔗 *Code Link:*  
 👉 [Day 19 – Algorithm's Runtime Analysis & Big-O Notation](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/JavaDsaConcepts/src/com/RuntimeAnalysisAndBigONotation)
 
 ---
