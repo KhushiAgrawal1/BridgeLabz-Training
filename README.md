@@ -429,18 +429,22 @@ BridgeLabz-Training
 **(Date: 06-Jan-2026)**
 - Learned some new methods 
 - Solved questions based on:
-  -StringBuilder
-  -StringBuffer
-  -FileReader
-  -InputStreamReader
-  -Linear Search 
-  -Binary Search
+  - StringBuilder
+  - StringBuffer
+  - FileReader
+  - InputStreamReader
+  - Linear Search 
+  - Binary Search
 
   🔗 *Code Link:*  
 👉 [Day 18 – StringBuilder](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/JavaDsaConcepts/src/StringBuilder)
+
 👉 [Day 18 – StringBuffer](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/JavaDsaConcepts/src/StringBuffer)
+
 👉 [Day 18 – FileReader](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/JavaDsaConcepts/src/FileReader)
+
 👉 [Day 18 – InputStreamReader](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/JavaDsaConcepts/src/InputStreamReader)
+
 👉 [Day 18 – Linear and Binary Search](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/JavaDsaConcepts/src/Linear_and_Binary_Search)
 
 ---
@@ -448,13 +452,13 @@ BridgeLabz-Training
 ## 📅 Day 19 – Algorithm's Runtime Analysis & Big-O Notation
 **(Date: 07-Jan-2026)**
 - General Algorithm Best Practices
-  -Write clear, readable, and modular code
-  -Choose the right data structures
-  -Avoid unnecessary loops and repeated calculations
+      - Write clear, readable, and modular code
+      - Choose the right data structures
+      - Avoid unnecessary loops and repeated calculations
 - Time and space Complexity Optimization
-  -Reduce time complexity by optimizing loops and logic
-  -Use efficient algorithms and data structures
-  -Minimize extra memory usage where possible
+      - Reduce time complexity by optimizing loops and logic
+      - Use efficient algorithms and data structures
+      - Minimize extra memory usage where possible
   
   🔗 *Code Link:*  
 👉 [Day 19 – Algorithm's Runtime Analysis & Big-O Notation](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/JavaDsaConcepts/src/com/RuntimeAnalysisAndBigONotation)
