@@ -1,5 +1,5 @@
 ## 📅 Day 15 – Linked List  
-**(Date: 02-Jan-2025)**
+**(Date: 02-Jan-2026)**
 
 - Learned Linked List and it's types
 - Worked on Single, Double, Circular linked list
@@ -27,9 +27,10 @@ BridgeLabz-Training
 🔗 *Code Link:*  
 👉 [Day 15 – Linked List Programs](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/JavaDsaConcepts/src/Linked_List)
 
+---
 
 ## 📅 Day 16 – Stack, Queue, Hashmap, and HashFunction  
-**(Date: 03-Jan-2025)**
+**(Date: 03-Jan-2026)**
 **(Focus: Learning Stack, Queue, Hashmap and Hashfunction with proper implementation)**
 
 - Stack:  
@@ -52,9 +53,10 @@ BridgeLabz-Training
 👉 [Day 16 – Stack & Queue](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/JavaDsaConcepts/src/Stack_Queue)  
 👉 [Day 16 – HashMap & Hash Function](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/JavaDsaConcepts/src/Hash_Map_Hash_Function)
 
+---
 
 ## 📅 Day 17 – Sorting Algorithms
-**(Date: 05-Jan-2025)**
+**(Date: 05-Jan-2026)**
 - Learned to arrange elements in ascending or descending order
 - Implemented common algorithms like:
   - Bubble sort
@@ -68,3 +70,43 @@ BridgeLabz-Training
 
   🔗 *Code Link:*  
 👉 [Day 17 – Sorting algorithms](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/JavaDsaConcepts/src/Sorting_Algorithms)
+
+---
+
+## 📅 Day 18 – Linear and Binary Search
+**(Date: 06-Jan-2026)**
+- Learned some new methods 
+- Solved questions based on:
+  -StringBuilder
+  -StringBuffer
+  -FileReader
+  -InputStreamReader
+  -Linear Search 
+  -Binary Search
+
+  🔗 *Code Link:*  
+👉 [Day 18 – StringBuilder](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/JavaDsaConcepts/src/StringBuilder)
+👉 [Day 18 – StringBuffer](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/JavaDsaConcepts/src/StringBuffer)
+👉 [Day 18 – FileReader](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/JavaDsaConcepts/src/FileReader)
+👉 [Day 18 – InputStreamReader](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/JavaDsaConcepts/src/InputStreamReader)
+👉 [Day 18 – Linear and Binary Search](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/JavaDsaConcepts/src/Linear_and_Binary_Search)
+
+---
+
+## 📅 Day 19 – Algorithm's Runtime Analysis & Big-O Notation
+**(Date: 07-Jan-2026)**
+- General Algorithm Best Practices
+  -Write clear, readable, and modular code
+  -Choose the right data structures
+  -Avoid unnecessary loops and repeated calculations
+- Time and space Complexity Optimization
+  -Reduce time complexity by optimizing loops and logic
+  -Use efficient algorithms and data structures
+  -Minimize extra memory usage where possible
+  
+  🔗 *Code Link:*  
+👉 [Day 19 – Algorithm's Runtime Analysis & Big-O Notation](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/JavaDsaConcepts/src/com/RuntimeAnalysisAndBigONotation)
+
+---
+
+
