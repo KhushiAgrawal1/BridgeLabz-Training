@@ -273,7 +273,7 @@ BridgeLabz-Training
 
 - Gained hands-on experience in organizing programs for better **maintainability and readability**.
 
-🔗 *Code Link:*  
+    🔗 *Code Link:*  
 👉 [Day 10 – Java Constructors](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/constructors/level1)
 
 
@@ -379,7 +379,7 @@ BridgeLabz-Training
 └── README.md
 ```
 
-🔗 *Code Link:*  
+    🔗 *Code Link:*  
 👉 [Day 15 – Linked List Programs](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/JavaDsaConcepts/src/Linked_List)
 
 
@@ -403,7 +403,7 @@ BridgeLabz-Training
   - Converts keys into index values
   - Helps in fast data access
 
-🔗 *Code Links:*  
+    🔗 *Code Links:*  
 👉 [Day 16 – Stack & Queue](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/JavaDsaConcepts/src/Stack_Queue)  
 👉 [Day 16 – HashMap & Hash Function](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/JavaDsaConcepts/src/Hash_Map_Hash_Function)
 
@@ -436,7 +436,8 @@ BridgeLabz-Training
   - Linear Search 
   - Binary Search
 
-  🔗 *Code Link:*  
+  🔗 *Code Link:*
+  
 👉 [Day 18 – StringBuilder](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/JavaDsaConcepts/src/StringBuilder)
 
 👉 [Day 18 – StringBuffer](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/JavaDsaConcepts/src/StringBuffer)
@@ -452,13 +453,13 @@ BridgeLabz-Training
 ## 📅 Day 19 – Algorithm's Runtime Analysis & Big-O Notation
 **(Date: 07-Jan-2026)**
 - General Algorithm Best Practices
-      - Write clear, readable, and modular code
-      - Choose the right data structures
-      - Avoid unnecessary loops and repeated calculations
+  - Write clear, readable, and modular code
+  - Choose the right data structures
+  - Avoid unnecessary loops and repeated calculations
 - Time and space Complexity Optimization
-      - Reduce time complexity by optimizing loops and logic
-      - Use efficient algorithms and data structures
-      - Minimize extra memory usage where possible
+  - Reduce time complexity by optimizing loops and logic
+  - Use efficient algorithms and data structures
+  - Minimize extra memory usage where possible
   
   🔗 *Code Link:*  
 👉 [Day 19 – Algorithm's Runtime Analysis & Big-O Notation](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/JavaDsaConcepts/src/com/RuntimeAnalysisAndBigONotation)
