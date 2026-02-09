@@ -1,0 +1,48 @@
+use mysql_jdbc_practice;
+
+CREATE TABLE account(
+    -> account_id INT PRIMARY KEY,
+    -> name VARCHAR(50),
+    -> balance INT
+    -> );
+
+CREATE TABLE transaction_history(
+    -> txn_id INT AUTO_INCREMENT PRIMARY KEY,
+    -> from_account INT,
+    -> to_account INT,
+    -> amount INT,
+    -> txn_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    -> );
+
+INSERT INTO account VALUES
+    -> (1, "Khushi", 1000),
+    -> (2, "Tanisha", 2000);
+
+START TRANSACTION;
+
+UPDATE account
+    -> SET balance=balance-500
+    -> WHERE account_id = 1;
+
+INSERT into transaction_history(from_account, to_account, amount)
+    -> VALUES
+    -> (2,1,2000);
+
+COMMIT;
+
+SELECT * FROM account;
+
++------------+---------+---------+
+| account_id | name    | balance |
++------------+---------+---------+
+|          1 | Khushi  |     500 |
+|          2 | Tanisha |    2000 |
++------------+---------+---------+
+
+SELECT * FROM transaction_history;
+
++--------+--------------+------------+--------+---------------------+
+| txn_id | from_account | to_account | amount | txn_date            |
++--------+--------------+------------+--------+---------------------+
+|      1 |            2 |          1 |   2000 | 2026-02-09 15:16:01 |
++--------+--------------+------------+--------+---------------------+
