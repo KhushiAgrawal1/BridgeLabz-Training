@@ -1,0 +1,95 @@
+CREATE DATABASE mysql_jdbc_practice;
+
+USE mysql_jdbc_practice;
+
+CREATE TABLE employee(
+    empId INT PRIMARY KEY,
+    name VARCHAR(100),
+    salary DOUBLE
+);
+
+INSERT INTO employee VALUES
+(101,"Khushi",100000),
+(102,"Tanisha",12345345),
+(103,"Virendra",57483902),
+(104,"Vishal",65431),
+(105,"Vikash",1234567890);
+
+SELECT *FROM employee;
+show databases;
+
++---------------------+
+| Database            |
++---------------------+
+| employee_db         |
+| information_schema  |
+| mysql               |
+| mysql_jdbc_practice |
+| performance_schema  |
+| sys                 |
++---------------------+
+
+use mysql_jdbc_practice;
+
+Show tables;
+
++-------------------------------+
+| Tables_in_mysql_jdbc_practice |
++-------------------------------+
+| employee                      |
++-------------------------------+
+
+
+SELECT *FROM employee;
+
++-------+----------+------------+
+| empId | name     | salary     |
++-------+----------+------------+
+|   101 | Khushi   |     100000 |
+|   102 | Tanisha  |   12345345 |
+|   103 | Virendra |   57483902 |
+|   104 | Vishal   |      65431 |
+|   105 | Vikash   | 1234567890 |
++-------+----------+------------+
+
+
+UPDATE employee
+    -> SET salary=121234567 WHERE empId=104;
+
+SELECT *FROM employee;
+ 
++-------+----------+------------+
+| empId | name     | salary     |
++-------+----------+------------+
+|   101 | Khushi   |     100000 |
+|   102 | Tanisha  |   12345345 |
+|   103 | Virendra |   57483902 |
+|   104 | Vishal   |  121234567 |
+|   105 | Vikash   | 1234567890 |
++-------+----------+------------+
+
+
+DELETE FROM employee
+    -> WHERE empId=104;
+
+
+SELECT *FROM employee;
+
++-------+----------+------------+
+| empId | name     | salary     |
++-------+----------+------------+
+|   101 | Khushi   |     100000 |
+|   102 | Tanisha  |   12345345 |
+|   103 | Virendra |   57483902 |
+|   105 | Vikash   | 1234567890 |
++-------+----------+------------+
+
+
+SELECT *FROM employee
+    -> WHERE name="Khushi";
+    
++-------+--------+--------+
+| empId | name   | salary |
++-------+--------+--------+
+|   101 | Khushi | 100000 |
++-------+--------+--------+
