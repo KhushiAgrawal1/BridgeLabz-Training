@@ -458,7 +458,7 @@ BridgeLabz-Training
 - Simulated AmbulanceRoute using Circular Linked List for emergency navigation.
   
 🔗 *Code Link:*  
-👉 [Day 6 – DSA Scenario-Based Practice](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/ScenarioBasedQuestions/src/com)
+👉 [Day 6 – DSA Scenario-Based Practice](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/ScenarioBasedQuestions/src/com/AmbulanceRoute_Emergency_Patient_Navigation)
 
 ## 📅 Day 7 – DSA Scenario-Based Practice
 **(Date: 11-Jan-2026)**
@@ -471,7 +471,7 @@ BridgeLabz-Training
 - TrafficManager simulates a smart city roundabout using a Circular Linked List for vehicle flow and a Queue to manage waiting vehicles.
   
 🔗 *Code Link:*  
-👉 [Day 7 – DSA Scenario-Based Practice](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/ScenarioBasedQuestions/src/com)
+👉 [Day 7 – DSA Scenario-Based Practice](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/ScenarioBasedQuestions/src/com/TrafficManager_Roundabout_Vehicle_Flow)
 
 ## 📅 Day 8 – DSA Scenario-Based Practice
 **(Date: 13-Jan-2026)**
@@ -483,7 +483,7 @@ BridgeLabz-Training
 - Built ExamProctor using Stack and HashMap to record question navigation and evaluate answers using functions.
   
 🔗 *Code Link:*  
-👉 [Day 8 – DSA Scenario-Based Practice](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/ScenarioBasedQuestions/src/com)
+👉 [Day 8 – DSA Scenario-Based Practice](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/ScenarioBasedQuestions/src/com/ExamProctor_Online_Exam_Review_System)
 
 ## 📅 Day 9 – DSA Scenario-Based Practice
 **(Date: 15-Jan-2026)**
@@ -497,7 +497,8 @@ BridgeLabz-Training
 - Focused on choosing the right sorting technique based on data size, order, and performance needs, following DSA best practices.
   
 🔗 *Code Link:*  
-👉 [Day 9 – DSA Scenario-Based Practice](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/ScenarioBasedQuestions/src/com)
+👉 [Day 9 – DSA Scenario-Based Practice](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/ScenarioBasedQuestions/src/com/ZipZipMart_Daily_Sales_Summary_Report)
+👉 [Day 9 – DSA Scenario-Based Practice](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/ScenarioBasedQuestions/src/com/ExamCell_Student_Rank_Generator)
 
 ## 📅 Day 10 – DSA Scenario-Based Practice
 **(Date: 16-Jan-2026)**
@@ -510,7 +511,7 @@ BridgeLabz-Training
 - Focused on selecting sorting algorithms based on data size, insertion pattern, and performance requirements, following DSA best practices.
   
 🔗 *Code Link:*  
-👉 [Day 10 – DSA Scenario-Based Practice](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/ScenarioBasedQuestions/src/com)
+👉 [Day 10 – DSA Scenario-Based Practice](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/ScenarioBasedQuestions/src/com)
 
 ## 📅 Day 11 – DSA Scenario-Based Practice
 **(Date: 17-Jan-2026)**
@@ -523,7 +524,7 @@ BridgeLabz-Training
 - Focused on applying sorting techniques according to practical constraints and performance needs.
   
 🔗 *Code Link:*  
-👉 [Day 11 – DSA Scenario-Based Practice](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/ScenarioBasedQuestions/src/com)
+👉 [Day 11 – DSA Scenario-Based Practice](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/ScenarioBasedQuestions/src/com)
 
 ## 📅 Day 12 – DSA Scenario-Based Practice
 **(Date: 19-Jan-2026)**
@@ -536,7 +537,7 @@ BridgeLabz-Training
 - Focused on selecting the appropriate sorting algorithm based on data size, stability, and performance needs.
   
 🔗 *Code Link:*  
-👉 [Day 12 – DSA Scenario-Based Practice](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/ScenarioBasedQuestions/src/com)
+👉 [Day 12 – DSA Scenario-Based Practice](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/ScenarioBasedQuestions/src/com)
 
 ## 📅 Day 13 – DSA Scenario-Based Practice
 **(Date: 20-Jan-2026)**
@@ -549,7 +550,7 @@ BridgeLabz-Training
 - Strengthened understanding of real-time data handling and performance-driven sorting.
   
 🔗 *Code Link:*  
-👉 [Day 13 – DSA Scenario-Based Practice](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/ScenarioBasedQuestions/src/com)
+👉 [Day 13 – DSA Scenario-Based Practice](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/ScenarioBasedQuestions/src/com)
 
 ## 📅 Day 14 – DSA Scenario-Based Practice
 **(Date: 21-Jan-2026)**
@@ -562,7 +563,7 @@ BridgeLabz-Training
 - Strengthened understanding of algorithm selection for sorted and critical datasets.
   
 🔗 *Code Link:*  
-👉 [Day 14 – DSA Scenario-Based Practice](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/ScenarioBasedQuestions/src/com)
+👉 [Day 14 – DSA Scenario-Based Practice](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/ScenarioBasedQuestions/src/com)
 
 ## 📅 Day 15 – DSA Scenario-Based Practice
 **(Date: 22-Jan-2026)**
@@ -575,7 +576,7 @@ BridgeLabz-Training
 - Strengthened understanding of BST operations: insert, delete, search, and traversal for real-world datasets.
   
 🔗 *Code Link:*  
-👉 [Day 15 – DSA Scenario-Based Practice](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/ScenarioBasedQuestions/src/com/binarysearchtree)
+👉 [Day 15 – DSA Scenario-Based Practice](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/ScenarioBasedQuestions/src/binary_search_tree)
 
 ## 📅 Day 16 – DSA Scenario-Based Practice
 **(Date: 23-Jan-2026)**
@@ -588,7 +589,7 @@ BridgeLabz-Training
 - Strengthened understanding of height balancing and real-time data handling using AVL Trees.
   
 🔗 *Code Link:*  
-👉 [Day 16 – DSA Scenario-Based Practice](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/ScenarioBasedQuestions/src/com/avltree)
+👉 [Day 16 – DSA Scenario-Based Practice](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/ScenarioBasedQuestions/src/avl_tree)
 
 # Week 4 : Collection Interface
 
@@ -603,7 +604,7 @@ BridgeLabz-Training
 - Focused on applying generics effectively to write clean, robust, and maintainable collection-based code.
 
 🔗 *Code Link:*  
-👉 [Day 1 – Java Generics](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionConcepts/src/com/javagenerics)
+👉 [Day 1 – Java Generics](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionConcepts/src/com/java_generics)
 
 
 ## 📅 Day 2 – Java Collections Framework: List, Set, Queue & Map 
@@ -618,7 +619,7 @@ BridgeLabz-Training
 - Focused on choosing the right collection type based on performance, ordering, and use-case requirements.
 
 🔗 *Code Links:*  
-👉 [Day 2 – Java Collections Practice](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionConcepts/src/com/collections)
+👉 [Day 2 – Java Collections Practice](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionConcepts/src/com/collections)
 
 
 ## 📅 Day 3 – Java File Handling & I/O Streams
@@ -632,7 +633,7 @@ BridgeLabz-Training
 - Worked with ByteArray streams, data streams, piped streams, and large-file processing to handle real-world I/O scenarios efficiently.
 
 🔗 *Code Link:*  
-👉 [Day 3 – Java Streams](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionConcepts/src/com/stream)
+👉 [Day 3 – Java Streams](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionConcepts/src/com/streams)
 
 ## 📅 Day 4 – Java: Exception Handling
 **(Date: 20-Jan-2025)**
@@ -645,7 +646,7 @@ BridgeLabz-Training
 - Focused on writing robust, readable, and maintainable code with proper exception-handling best practices.
 
 🔗 *Code Link:*
-👉 [Day 4 – Exception Handling Practice](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionConcepts/src/com/exception)
+👉 [Day 4 – Exception Handling Practice](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionConcepts/src/com/exceptions)
 
 
 ## 📅 Day 5 – Java Fundamentals: Regex & JUnit
@@ -659,8 +660,8 @@ BridgeLabz-Training
 - Learned JUnit fundamentals including annotations, test case writing, test class structure, and assertions for validating logic.
   
 🔗 *Code Link:*  
-👉 [Day 5 – Regex, ](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionConcepts/src/com/regex)
-[JUnit](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionConcepts/src/com/junitPractice)
+👉 [Day 5 – Regex, ](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionConcepts/src/com/regex)
+[JUnit](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/junit/src)
 
 ## 📅 Day 6 – Java Collections & Core Java: Reflection and Annotations
 **(Date: 22-Jan-2026)**
@@ -673,8 +674,8 @@ BridgeLabz-Training
 - Focused on using reflection and annotations for framework-level features, clean design, and advanced Java use cases.
 
 🔗 *Code Link:*  
-👉 [Day 6 – Reflection & Annotation Practice, ](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionConcepts/src/com/reflection)
-[Annotation Practice](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionConcepts/src/com/annotations)
+👉 [Day 6 – Reflection & Annotation Practice, ](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionConcepts/src/com/annotations)
+[Annotation Practice](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionConcepts/src/com/reflection)
 
 ## 📅 Day 7 – Java Advanced: Scenario-Based Practice (Collections, I/O, Regex, Generics)
 **(Date: 23-Jan-2026)**
@@ -687,20 +688,8 @@ BridgeLabz-Training
 - Developed tools like CodeRepoCleaner and ExamScanner to scan files, validate formats, organize data, and rank results efficiently.
   
 🔗 *Code Link:*  
-👉 [Day 7 – Advanced Java Scenario-Based Practice](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/scenario-based/ScenarioBasedQuestions/src/com)
+👉 [Day 7 – Advanced Java Scenario-Based Practice](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/scenario-based/ScenarioBasedQuestions/src/com)
 
-## 📅 Day 8 – Java Collections: Scenario-Based Practice
-**(Date: 24-Jan-2026)**
-**(Focus: Real-World Data Processing using Collections, I/O & Regex)**
-
-- Worked on advanced Java collection-based scenarios integrating I/O Streams, Regex, Generics, and Custom Exceptions.
-- Implemented MedInventory to process hospital inventory CSV files, detect expired items, remove duplicates, and track low stock levels.
-- Built ChatLogParser to analyze chat logs using regex, group messages by user, and filter idle conversations with sorted outputs.
-- Developed SongVault to manage a personal music library by extracting song metadata, grouping by genre, and filtering using streams.
-- Created tools like ExamResultUploader and DealTracker to validate CSV/text data, calculate rankings, and manage discounts efficiently.
-  
-🔗 *Code Link:*  
-👉 [Day 8 – DSA Scenario-Based Practice](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/scenario-based/ScenarioBasedQuestions/src/com)
 
 # Week 5: Java IOStreams
 
@@ -715,7 +704,7 @@ BridgeLabz-Training
 - Explored real-world integrations including database-to-CSV reporting, JSON ↔ CSV conversion, and encrypting/decrypting sensitive CSV fields.
 
 🔗 *Code Link:*  
-👉 [Day 1 – CSV Data Handling Practice](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-iostreams-practice/java-iostreams-practice/gcr-codebase/JavaIOStreamConcepts/src/com/csvdatahandling)
+👉 [Day 1 – CSV Data Handling Practice](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/java-iostreams-practice/java-iostreams-practice/gcr-codebase/csv-practice/src/main/java/com/csv_practice)
 
 
 ## 📅 Day 2 – Java Data Handling: JSON Processing
@@ -730,20 +719,8 @@ BridgeLabz-Training
 
 
 🔗 *Code Links:*  
-👉 [Day 2 – JSON Data Handling](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-iostreams-practice/java-iostreams-practice/gcr-codebase/json-practice/src/main/java/com/datahandling/json) 
+👉 [Day 2 – JSON Data Handling](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/java-iostreams-practice/java-iostreams-practice/gcr-codebase/json-practice/src/main/java/com/json_practice) 
 
-## 📅 Day 3 – Java I/O & Metadata: Scenario-Based Practice  
-**(Date: 27-Jan-2025)**
-**(Focus: Annotations, Reflection, CSV & JSON Data Handling)**
-
-- Worked on real-world Java scenarios integrating Annotations, Reflection, CSV parsing, and JSON processing.
-- Implemented HealthCheckPro to scan API methods using custom annotations and reflection for validation and documentation generation.
-- Built MarkMate to read student marks from CSV files, process results, and generate JSON-based report cards.
-- Developed EventTracker to detect annotated methods and produce structured JSON audit logs using reflection.
-- Focused on writing robust, metadata-driven, and data-processing applications with proper exception handling.
-
-🔗 *Code Link:*  
-👉 [Day 3 – IO Scenario-Based Practice](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-iostreams-practice/java-iostreams-practice/scenario-based/ScenarioBasedQuestions/src/com)
 
 # Week 6: Java 8 features
 
@@ -759,8 +736,8 @@ BridgeLabz-Training
 - Focused on building a strong foundation for Streams API, collections processing, and functional-style programming.
 
 🔗 *Code Link:*  
-👉 [Day 1 – Lambda Functions, ](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/gcr-codebase/Java8FeaturesConcepts/src/com/lambdaexpressions)
-[Functional Interface](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/gcr-codebase/Java8FeaturesConcepts/src/com/functionalinterfaces)
+👉 [Day 1 – Lambda Functions, ](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/gcr-codebase/Java8ProgrammingPractice/src/lambda_expressions)
+[Functional Interface](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/gcr-codebase/Java8ProgrammingPractice/src/com/Functional_Interfaces)
 
 
 ## 📅 Day 2 – Java 8 Streams API And Collectors
@@ -775,15 +752,5 @@ BridgeLabz-Training
 - Worked with commonly used collectors like toList(), toSet(), toMap(), groupingBy(), and counting().
 
 🔗 *Code Links:*  
-👉 [Day 2 – Stream API, ](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/gcr-codebase/Java8FeaturesConcepts/src/com/streamapi)
-[Collectors](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/gcr-codebase/Java8FeaturesConcepts/src/com/collectors)
-
-## 📅 Day 3 – Java8: Scenario-Based Practice  
-**(Date: 28-Jan-2025)**
-**(Focus: Annotations, Reflection, CSV & JSON Data Handling)**
-
-- Applied these concepts in the Smart City Transport System to filter schedules, display live services, and analyze passenger trips using Streams and Collectors.
-- Focused on writing clean, readable, and efficient functional-style Java 8 code for real-world scenarios.
-
-🔗 *Code Link:*  
-👉 [Day 3 – Java8 Scenario-Based Practice](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/gcr-codebase/Java8FeaturesConcepts/src/com/workshop/smartcity)
+👉 [Day 2 – Stream API, ](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/gcr-codebase/Java8ProgrammingPractice/src/com/Stream_API)
+[Collectors](https://github.com/KhushiAgrawal1/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/gcr-codebase/Java8ProgrammingPractice/src/com/Collectors)
